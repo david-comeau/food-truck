@@ -25,6 +25,8 @@ jobs:
         run: |
           curl -sS https://get.symfony.com/cli/installer | bash
           mv /home/runner/.symfony5/bin/symfony /usr/local/bin/symfony
+          # when testing locally with act use
+          # mv /root/.symfony*/bin/symfony /usr/local/bin/symfony
 
       - name: Validate composer.json and composer.lock
         run: composer validate --strict
