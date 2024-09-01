@@ -24,7 +24,7 @@ WORKDIR /app
 # copy project into container
 COPY . .
 
-# set production environment to allow tests in Docker
+# set dev environment to allow tests in Docker
 ENV APP_ENV=dev
 
 # install project deps
