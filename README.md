@@ -61,6 +61,8 @@ Due to the constraints of this exercise, this application has limited functional
  - Log aggregation.
  - Log user actions.
  - More unit test cases.
+ - Code coverage with Xdebug.
+ - Testing Docker & Git in different environments (only tested Mac OS).
  - More robust search operators (negatives, include/omit fields, etc...) and user input validation.
  - Caching API response.
  - Location based sorting.
