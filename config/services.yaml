@@ -1,0 +1,22 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  App\:
+    resource: "../src/"
+    exclude:
+      - "../src/DependencyInjection/"
+      - "../src/Entity/"
+      - "../src/Kernel.php"
+
+  App\Service\FoodTruckService:
+    public: true
+    arguments:
+      $apiUrl: "https://data.sfgov.org/resource/rqzj-sfat.json"
+      $localFile: "%kernel.project_dir%/tests/Fixtures/food_trucks.json"
+
+  App\Command\FoodTruckCommand:
+    tags:
+      - { name: "console.command" }
