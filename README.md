@@ -16,8 +16,7 @@ Ensure Docker and Git are installed on your local machine.
 
 1. Clone this repository:
    ```
-   git clone https://github.com/your-username/food-truck.git \
-   cd food-truck
+   git clone https://github.com/your-username/food-truck.git && cd food-truck
    ```
 
 2. Build the Docker image:
