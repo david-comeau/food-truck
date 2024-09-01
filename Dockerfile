@@ -24,11 +24,11 @@ WORKDIR /app
 # copy project into container
 COPY . .
 
-# set production environment
-ENV APP_ENV=prod
+# set production environment to allow tests in Docker
+ENV APP_ENV=dev
 
 # install project deps
-RUN composer install --no-dev --optimize-autoloader
+RUN composer install --optimize-autoloader
 
 # clear & warm symfony cache
 RUN set -eux; \
