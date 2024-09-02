@@ -4,6 +4,8 @@ This Symfony console CLI application searches and lists San Francisco, CA food t
 
 Please read and follow terms of use found here https://www.sf.gov/reports/april-2017/datasf-terms-use
 
+Although CLI applications are not the most common use case for PHP and Symfony, I chose this tech stack due to my extensive experience with it. In developing this project, I have prioritized production-readiness over feature abundance. My primary focus has been on maintaining high code quality and implementing robust CI/CD processes. This approach ensures that only thoroughly tested, high-quality code is deployed to production, reflecting industry best practices for reliable software delivery.
+
 ## Prerequisites
 
 Ensure Docker and Git are installed on your local machine.
